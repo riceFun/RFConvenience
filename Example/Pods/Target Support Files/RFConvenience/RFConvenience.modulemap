@@ -1,0 +1,6 @@
+framework module RFConvenience {
+  umbrella header "RFConvenience-umbrella.h"
+
+  export *
+  module * { export * }
+}

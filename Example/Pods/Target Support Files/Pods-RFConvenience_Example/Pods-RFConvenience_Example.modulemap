@@ -1,0 +1,6 @@
+framework module Pods_RFConvenience_Example {
+  umbrella header "Pods-RFConvenience_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
