@@ -30,7 +30,7 @@ extension String {
         let dateFormatter:DateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         let K_Date_Location = "K_Date_Location"
-        dateFormatter.locale = Locale(identifier: )
+        dateFormatter.locale = Locale(identifier: K_Date_Location)
         return  dateFormatter.string(from: Date())
     }
     
@@ -51,7 +51,11 @@ extension String {
     
     /// 创建文件夹
     func fileCreateDirectory() {
-        try! FileManager.default.createDirectory(at: NSURL(fileURLWithPath:self , isDirectory: true, relativeTo: nil) as URL, withIntermediateDirectories: true, attributes: nil)
+        if #available(iOS 9.0, *) {
+            try! FileManager.default.createDirectory(at: NSURL(fileURLWithPath:self , isDirectory: true, relativeTo: nil) as URL, withIntermediateDirectories: true, attributes: nil)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     /// 拼接路径
