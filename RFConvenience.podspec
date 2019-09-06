@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RFConvenience'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = '总结暂时没有'
 
   s.description      = <<-DESC

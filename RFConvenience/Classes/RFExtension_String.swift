@@ -61,7 +61,7 @@ public extension String {
     ///
     /// - Parameter byAppendingPaths: 要拼接的文件名
     /// - Returns: 拼接后的路径
-    public func fileByAppendingPaths(byAppendingPaths: String) -> String {
+    func fileByAppendingPaths(byAppendingPaths: String) -> String {
         return (self as NSString).strings(byAppendingPaths: [byAppendingPaths]).first!
     }
 }
