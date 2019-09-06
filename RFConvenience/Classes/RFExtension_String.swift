@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import CommonCrypto
 
-extension String {
+public extension String {
     var md5 : String{
         let str = self.cString(using: String.Encoding.utf8)
         let strLen = CC_LONG(self.lengthOfBytes(using: String.Encoding.utf8))
@@ -29,7 +29,6 @@ extension String {
     static func nowTimeWithFormat(format:String) -> String {
         let dateFormatter:DateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
-        let K_Date_Location = "K_Date_Location"
         dateFormatter.locale = Locale(identifier: K_Date_Location)
         return  dateFormatter.string(from: Date())
     }
@@ -62,7 +61,7 @@ extension String {
     ///
     /// - Parameter byAppendingPaths: 要拼接的文件名
     /// - Returns: 拼接后的路径
-    func fileByAppendingPaths(byAppendingPaths: String) -> String {
+    public func fileByAppendingPaths(byAppendingPaths: String) -> String {
         return (self as NSString).strings(byAppendingPaths: [byAppendingPaths]).first!
     }
 }

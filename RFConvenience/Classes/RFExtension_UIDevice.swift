@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIDevice {
+public extension UIDevice {
     class func kIsIphoneXSeries() -> Bool {
         let screenHeight = UIScreen.main.nativeBounds.size.height
         if screenHeight == 2436 || screenHeight == 1792 || screenHeight == 2688 || screenHeight == 1624 {

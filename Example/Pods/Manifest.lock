@@ -1,5 +1,5 @@
 PODS:
-  - RFConvenience (0.0.1)
+  - RFConvenience (0.0.2)
 
 DEPENDENCIES:
   - RFConvenience (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RFConvenience: a6f3f0ca4ce1b3db2317af90cf39e1c6b4f57603
+  RFConvenience: b0ec36d87e771ba468676511d8c726067dc9f72e
 
 PODFILE CHECKSUM: b8cd8497fadcf672e26e5937d3a5823d20e36450
 

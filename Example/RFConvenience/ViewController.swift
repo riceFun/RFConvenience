@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import RFConvenience
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let a =  UIDevice().modelName
+        var p = K_ScreenHeight
+        p = 80
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum kTimeFormat:String{
+public enum kTimeFormat:String{
     case format_default            = "yyyy-MM-dd HH:mm:ss"
     case format_yyMdHm             = "yy-MM-dd HH:mm"
     case format_yyyyMdHm           = "yyyy-MM-dd HH:mm"

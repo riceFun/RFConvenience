@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSObject{
+public extension NSObject{
     
     /// 模型转JSONString
     var modelToJSONString : String {
